@@ -119,6 +119,31 @@ img {
   -webkit-text-fill-color: transparent;
 }
 
+.marquesina {
+  width: 100%;
+  height: 80px;
+  overflow: hidden;
+  background: rgb(106, 45, 228);
+  background: linear-gradient(
+    120deg,
+    rgba(106, 45, 228, 1) 39%,
+    rgba(237, 93, 224, 1) 79%
+  );
+  /* background-color: #f0f0f0; */
+  position: relative;
+}
+.marquesina-contenido {
+  display: flex;
+  position: absolute;
+  white-space: nowrap;
+  will-change: transform;
+}
+.marquesina-item {
+  padding: 0 20px;
+  font-size: 24px;
+  line-height: 80px;
+}
+
 /* media queries */
 
 @media (max-width: 768px) {
