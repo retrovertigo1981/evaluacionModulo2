@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Calcular cuántos clones necesitamos para llenar la marquesina
     const clonesNecesarios = Math.ceil(marquesinaWidth / itemWidth) + 1;
+    console.log(clonesNecesarios);
 
     // Añadir clones
     for (let i = 0; i < clonesNecesarios; i++) {
@@ -35,10 +36,9 @@ document.addEventListener('DOMContentLoaded', function () {
   function animarMarquesina() {
     const primerItem = marquesina.firstElementChild;
     let desplazamiento = 0;
-    const velocidad = 50; // Ajusta este valor para cambiar la velocidad
 
     function mover() {
-      desplazamiento -= 1;
+      desplazamiento -= 2;
       marquesina.style.transform = `translateX(${desplazamiento}px)`;
 
       if (Math.abs(desplazamiento) >= primerItem.offsetWidth) {
@@ -67,3 +67,19 @@ document.addEventListener('DOMContentLoaded', function () {
     clonarYAñadir();
   });
 });
+
+// logica carousel testimonios
+
+let currentPosition = 0;
+const testimonials = document.querySelectorAll('.testimonial');
+const container = document.querySelector('.testimonial-container');
+
+function moveTestimonials(direction) {
+  currentPosition += direction;
+  if (currentPosition < 0) {
+    currentPosition = testimonials.length - 2;
+  } else if (currentPosition >= testimonials.length - 1) {
+    currentPosition = 0;
+  }
+  container.style.transform = `translateX(-${currentPosition * 50}%)`;
+}
