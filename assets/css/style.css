@@ -13,10 +13,10 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f3f3f3;
+  overflow-x: hidden;
 }
 
 .layout {
@@ -102,7 +102,6 @@ header {
   grid-row-gap: 0px;
   padding: 20px;
   margin: 50px 0 100px;
-  /* background-color: #2b3035; */
 }
 
 .about-me {
@@ -126,9 +125,9 @@ header {
   align-items: center;
 }
 
-img {
-  width: 500px;
-  height: 500px;
+.my-img img {
+  width: 400px;
+  height: 400px;
 }
 
 .about-me .title span {
@@ -198,6 +197,7 @@ img {
 .marquesina-contenido {
   display: flex;
   position: absolute;
+  overflow: hidden;
   white-space: nowrap;
   will-change: transform;
   height: 100%;
@@ -234,6 +234,11 @@ img {
   padding: 20px;
 }
 
+.about-wrapper .illustration img {
+  width: 400px;
+  height: 400px;
+}
+
 .about-wrapper .about-description p {
   padding: 50px 100px 0;
   font-family: Hind Madurai;
@@ -247,7 +252,8 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 50px 0 100px;
+  height: 700px;
+  margin-bottom: 50px;
 }
 
 .skills h2 {
@@ -430,10 +436,16 @@ img {
   flex: 0 0 50%;
   overflow: hidden;
   padding: 20px;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   border: 1px solid rgb(106, 45, 228);
   border-radius: 10px;
   margin-right: 15px;
+}
+
+.testimonial h3 {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 0;
 }
 
 .testimonial img {
@@ -502,11 +514,18 @@ img {
   font-size: 24px;
 }
 
+.form-title {
+  font-family: Raleway;
+  font-size: 52px;
+  font-weight: 800;
+}
+
 /* media queries */
 
 @media (max-width: 768px) {
   .menu {
     display: none;
+    font-weight: 800;
   }
 
   .menu-toggle {
@@ -552,6 +571,21 @@ img {
     flex-direction: column;
   }
 
+  .about-me .title {
+    font-size: 48px;
+    line-height: 4rem;
+  }
+
+  .about-me .hero-cta {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .about-me .hero-cta {
+    display: none;
+  }
+
   .about-me {
     padding: 0;
   }
@@ -585,5 +619,23 @@ img {
   .illustration img {
     width: 300px;
     height: 300px;
+  }
+
+  .skills-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    height: 700px;
+    width: 500px;
+    padding: 0 100px;
+    /* gap: 8px; */
+  }
+
+  .cta-services {
+    margin-bottom: 40px;
+  }
+
+  .testimonial {
+    flex: 0 0 100%;
+    overflow-y: hidden;
   }
 }
