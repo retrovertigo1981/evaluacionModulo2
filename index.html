@@ -31,7 +31,7 @@
   <body>
     <div class="layout-page">
       <header>
-        <nav class="nav-bar">
+        <nav class="nav-bar" id="inicio">
           <div class="brand">
             <a href="./index.html"> < fuzz.dev /> </a>
           </div>
@@ -39,7 +39,7 @@
             <li><a href="#aboutId">Sobre mí</a></li>
             <li><a href="#skillsId">Skills</a></li>
             <li><a href="#servicesId">Servicios</a></li>
-            <li><a href="#">Proyectos</a></li>
+            <li><a href="#proyectosId">Proyectos</a></li>
           </ul>
           <div class="cta">
             <a href="#contactForm" class="cta-btn">HABLEMOS!</a>
@@ -49,10 +49,10 @@
           </div>
         </nav>
         <ul class="menu-mobile">
-          <li><a href="#">About</a></li>
-          <li><a href="#">Curriculum</a></li>
-          <li><a href="#">Proyectos</a></li>
-          <li><a href="#">Skills</a></li>
+          <li><a href="#aboutId">Sobre mí</a></li>
+          <li><a href="#skillsId">Skills</a></li>
+          <li><a href="#servicesId">Servicios</a></li>
+          <li><a href="#proyectosId">Proyectos</a></li>
           <li><a href="#contactForm">Contacto</a></li>
         </ul>
       </header>
@@ -71,7 +71,7 @@
             </p>
             <div class="hero-cta">
               <a href="#contactForm">PONTE EN CONTACTO!</a>
-              <a href="">MIRA MIS PROYECTOS</a>
+              <a href="#proyectosId">MIRA MIS PROYECTOS</a>
             </div>
           </div>
           <div class="my-img">
@@ -329,7 +329,144 @@
             </div>
           </div>
         </div>
-
+        <div class="container mt-5">
+          <h2 id="proyectosId">Mis Proyectos</h2>
+          <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+              <div class="card">
+                <img
+                  src="./assets/img/Pokedex.jpeg"
+                  class="card-img-top"
+                  alt="imagen de web pokedex"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Pokedex</h5>
+                  <p class="card-text">
+                    Proyecto web desarrollado en React, con Material UI,
+                    conectada a la popular API
+                    <strong>
+                      <a
+                        href="https://pokeapi.co/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >PókeAPI</a
+                      >
+                    </strong>
+                    , la cual nos trae a los 151 pokémons originales con sus
+                    stats.
+                  </p>
+                  <div class="card-links">
+                    <a
+                      href="https://taller-react-tech-school.vercel.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      ><i class="bi bi-eye"></i
+                    ></a>
+                    <a
+                      href="https://github.com/retrovertigo1981/tallerReactTechSchool"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      ><i class="bi bi-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="./assets/img/delomai.jpeg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Delomai</h5>
+                  <p class="card-text">
+                    Proyecto de Landing page realizada por encargo, en HTML, CSS
+                    y JavaScript vanilla para la marca Rancagüina de cervaza
+                    artesanal Delomai.
+                  </p>
+                  <div class="card-links">
+                    <a
+                      href="https://delomai-beer.vercel.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      ><i class="bi bi-eye"></i
+                    ></a>
+                    <a
+                      href="https://github.com/retrovertigo1981/delomaiBeer"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      ><i class="bi bi-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="./assets/img/TodoZen.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">TodoZen</h5>
+                  <p class="card-text">
+                    Aplicacion web realizada en React, la cual es una lsta de
+                    tareas, donde podemos agrear, buscar, marcar tareas como
+                    realizadas y eliminar tareas.
+                  </p>
+                  <div class="card-links">
+                    <a
+                      href="https://retrovertigo1981.github.io/curso-react-intro/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      ><i class="bi bi-eye"></i
+                    ></a>
+                    <a
+                      href="https://github.com/retrovertigo1981/curso-react-intro"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      ><i class="bi bi-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="./assets/img/Apple Watch.jpeg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Apple Watch</h5>
+                  <p class="card-text">
+                    Proyecto de landing page realizada en HTML, CSS y
+                    JavaScript, cuyo objetivo es la practica de la composicion
+                    de una web, diseño, aplicacion de estilos y reactividad.
+                  </p>
+                  <div class="card-links">
+                    <a
+                      href="https://retrovertigo1981.github.io/animatedAppleWatchEcom/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      ><i class="bi bi-eye"></i
+                    ></a>
+                    <a
+                      href="https://github.com/retrovertigo1981/animatedAppleWatchEcom"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      ><i class="bi bi-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="stadistics-section">
           <div class="projects-done">
             <h4>PROYECTOS REALIZADOS</h4>
@@ -348,7 +485,7 @@
           <div class="row justify-content-center">
             <div class="col-lg-6">
               <h2 class="form-title text-center mb-4">Contacto</h2>
-              <form action="#">
+              <form action="/graciasContacto.html">
                 <div class="mb-3">
                   <label for="nombre" class="form-label">Nombre</label>
                   <input
@@ -396,6 +533,13 @@
         <div class="footer-container">
           <a href="./index.html"> < fuzz.dev /> </a>
           <p>contacto@fuzzdev.cl</p>
+          <ul class="menuLinks-footer">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#aboutId">Sobre mí</a></li>
+            <li><a href="#skillsId">Skills</a></li>
+            <li><a href="#servicesId">Servicios</a></li>
+            <li><a href="#proyectosId">Proyectos</a></li>
+          </ul>
           <div class="social-media">
             <a
               href="https://www.instagram.com/fuzz_dev/"
